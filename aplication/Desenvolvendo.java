@@ -15,9 +15,21 @@ public class Desenvolvendo {
 		 produto.nome = sc.nextLine();
 		 System.out.print("Preço: ");
 		 produto.preco = sc.nextDouble();
-		 System.out.print("Estoque: ");
-		 produto.estoque = sc.nextDouble();
+		 System.out.print("Quantidade: ");
+		 produto.quantidade = sc.nextDouble();
 		 System.out.print(produto);
+		 System.out.println();
+		 System.out.print("Por favor adiconar a quantidade no estoque: ");
+		 int quantidade =sc.nextInt();
+		 produto.addTotal(quantidade);
+		 System.out.println(produto);
+		 System.out.print("Por favor retirar a quantidade no estoque: ");
+		 quantidade = sc.nextInt();
+		 produto.removeTotal(quantidade);
+		 System.out.println(produto);
+		 
+		 
+		 
 		 
 		 sc.close();
 	}
